@@ -1,0 +1,9 @@
+name: PlayersIndex
+version: ${project.version}
+main: com.github.nishitox.playersindex.PlayersIndex
+api-version: 1.15
+prefix: PlayersIndex
+commands:
+  playersindex:
+    usage: "§cusage: /playersindex set [player] [groupbyteam]"
+    permission: op
