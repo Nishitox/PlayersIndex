@@ -1,5 +1,5 @@
 # PlayersIndex
-リストにプレイヤーの索引を表示します。
+プレイヤーリストに索引を設定します。
 
 ## How to use
 `/playersindex set [player|selector] groupbyteam`で索引を設定します。  
