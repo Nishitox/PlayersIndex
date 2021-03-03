@@ -11,8 +11,7 @@ import java.util.*;
 
 public final class PlayersIndex extends JavaPlugin{
     static PlayersIndex plugin;
-    private final Scoreboard scoreboard =
-            Bukkit.getScoreboardManager().getMainScoreboard();
+    private Scoreboard scoreboard;
     private Objective objective;
 
     @Override
@@ -20,6 +19,7 @@ public final class PlayersIndex extends JavaPlugin{
         // Plugin startup logic
         plugin = this;
         getCommand("playersindex").setExecutor(new CommandManager());
+        scoreboard = Bukkit.getScoreboardManager().getMainScoreboard();
     }
 
     @Override
@@ -83,5 +83,14 @@ public final class PlayersIndex extends JavaPlugin{
             }
         }
         return teamPlayers;
+    }
+
+    List<String> getPlayerNames(List<Player> players){
+        List<String> playerNames = new ArrayList<>();
+        for(Player player: players){
+            playerNames.add(
+                    player.getName());
+        }
+        return playerNames;
     }
 }

@@ -5,6 +5,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
+import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -73,6 +74,9 @@ public class CommandManager implements CommandExecutor, TabCompleter {
         if(args[0].equalsIgnoreCase("set")) {
             if(args.length == 2) {
                 Collections.addAll(result, selector);
+                result.addAll(
+                        PlayersIndex.plugin.getPlayerNames(
+                                (List<Player>) Bukkit.getOnlinePlayers()));
             }
 
             if(args.length == 3) {
