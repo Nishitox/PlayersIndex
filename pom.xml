@@ -6,7 +6,7 @@
 
     <groupId>com.github.nishitox</groupId>
     <artifactId>playersindex</artifactId>
-    <version>1.0-beta</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
     <name>PlayersIndex</name>
