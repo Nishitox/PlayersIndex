@@ -1,5 +1,5 @@
 # PlayersIndex
-プレイヤーリストに索引を設定します。
+プレイヤーリストに索引を設定するプラグインです。
 
 ## How to use
 `/playersindex set [player|selector] groupByTeam`で索引を設定します。  
